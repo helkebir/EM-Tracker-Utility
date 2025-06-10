@@ -166,7 +166,7 @@ This mode bypasses the interactive CLI for scripting or direct execution.
 * [bold cyan]-n, --sensors N[/]  (Optional) Number of sensor topics for the consumer to subscribe to. Defaults to 4.
 
 [bold]Example:[/]
-[green]python your_script.py -f data/log.csv -r -n 3[/]
+[green]python em_util.py -f data/log.csv -r -n 3[/]
     """
     console.print(Panel.fit(help_text, title="[bold yellow]Help / Usage[/]", border_style="yellow"))
 
@@ -232,7 +232,7 @@ def cli():
     console = Console()
     console.rule("[bold green]MarginDx EM Utility - ZMQ CSV Replay Tool - Interactive Mode[/]")
     console.print("[green]Author: Hamza El-Kebir (elkebir2@illinois.edu)[/]")
-    console.print("[dim]Tip: Run with '-h' for headless mode options (e.g., 'python your_script.py -f data.csv').[/dim]\n")
+    console.print("[dim]Tip: Run with '-h' for headless mode options (e.g., 'python em_util.py -f data.csv').[/dim]\n")
     
     csv_path = file_explorer(console)
     if not csv_path:

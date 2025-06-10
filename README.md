@@ -2,6 +2,10 @@
 
 A command line utility for replying Polhemus EM tracker data.
 
+![Main](https://github.com/helkebir/EM-Tracker-Utility/raw/main/imgs/main.png)
+
+![Dummy](https://github.com/helkebir/EM-Tracker-Utility/raw/main/imgs/dummy.png)
+
 ## Usage
 
 Install required packages using `pip install -r requirements.txt`. Run the `em_util.py` in CLI mode using `python em_util.py` for usage details. By default, the script spawns both a 'replay' thread streaming the data in real-time to a ZMQ pub-sub server on port 5555, under topic `sensor/em/i`. Concurrently, a 'subscriber' thread is spawned to print the streamed data.
